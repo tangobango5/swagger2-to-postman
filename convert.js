@@ -59,6 +59,7 @@ var uuidv4 = require('uuid/v4'),
             this.basePath = '';
             if (json.HOST_ENV) {
                 this.basePath = "{{url}}"
+                return
             }
 
             if (json.host) {
